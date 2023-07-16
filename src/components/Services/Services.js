@@ -1,37 +1,37 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "./Services.css";
-import imgCourse1 from "../../assets/img/hbo.jpeg";
-import imgCourse2 from "../../assets/img/netflix.jpeg";
-import imgCourse3 from "../../assets/img/prime.jpeg";
+import imgCourse1 from "../../assets/img/service-1.png";
+import imgCourse2 from "../../assets/img/service-2.png";
+import imgCourse3 from "../../assets/img/guitarra.webp";
 import CardService from "./CardService/CardService";
 
 export default function Services() {
     const servicesArray = [
         {
-            title: "Wordpress Course",
-            subtitle: "Lear all about this great CMS",
+            title: "Autolavado",
+            subtitle: "Vive la mejor experiencia lavando tu vehículo",
             image: imgCourse1,
-            footer: "Go to the course ➡️",
-            link: "#!",
+            footer: "Go to the service ➡️",
+            link: "https://pulitocarwash.co/",
         },
         {
-            title: "Prestashop Course",
-            subtitle: "Lear all about this great CMS",
+            title: "Servicio de telefonia",
+            subtitle: "¡Contrata tu Plan de Internet Hogar o lleva tu Celular con un plan Pospago!",
             image: imgCourse2,
-            footer: "Go to the course ➡️",
-            link: "#!",
+            footer: "Go to the service ➡️",
+            link: "https://www.movistar.com.co/",
         },
         {
-            title: "React Course",
-            subtitle: "Lear all about this great CMS",
+            title: "Curso de guitarra",
+            subtitle: "En este curso de guitarra aprenderás a utilizar este instrumento musical",
             image: imgCourse3,
             footer: "Go to the course ➡️",
-            link: "#!",
+            link: "https://edutin.com/curso-de-guitarra-3884",
         },
     ];
 
     return (
-        <div className="services p-4 mt-5">
+        <div className="services p-4 mt-5" id="content-services">
             <Container fluid>
                 <Row className="justify-content-md-center">
                     <Col xs={12} md={8}>

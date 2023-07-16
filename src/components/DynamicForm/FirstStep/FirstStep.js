@@ -6,21 +6,39 @@ import { useState} from "react";
 export const fruits = [
     {
         id:1,
-        icon:"🍅",
-        name:"Tomato",
-        description:"Some quick example to build on the card title and make uo the bulk of the card's content",
+        icon:"🍦",
+        name:"Healado",
+        description:"Rico helado",
     },
     {
         id:2,
-        icon:"🫐",
-        name:"BlueBerries",
-        description:"Some quick example to build on the card title and make uo the bulk of the card's content",
+        icon:"🍰",
+        name:"Pastel",
+        description:"Momento dulce",
     },
     {
         id:3,
-        icon:"🍌",
-        name:"Banana",
-        description:"Some quick example to build on the card title and make uo the bulk of the card's content",
+        icon:"🍩",
+        name:"Dona",
+        description:"Mejor algo màs rico",
+    },
+    {
+        id:4,
+        icon:"🍎",
+        name:"Manzana",
+        description:"Soy saludable",
+    },
+    {
+        id:5,
+        icon:"🍕",
+        name:"Pizza",
+        description:"Pizzaaaaa",
+    },
+    {
+        id:6,
+        icon:"🍫",
+        name:"Chocolate",
+        description:"Solo chocolate, thanks!",
     },
 ];
 

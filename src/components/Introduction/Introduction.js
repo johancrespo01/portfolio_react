@@ -1,6 +1,11 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./Introduction.css";
+
 export default function Introduction() {
+    const handleClick = (id) => {
+        console.log("Haz dado clic")
+    };
+
     return (
         <div className="introduction p-3 p-lg-5 mt-5">
             <Container fluid>
@@ -15,11 +20,10 @@ export default function Introduction() {
                         </h4>
                         <div className="d-flex container-actions mt-5">
                             <div className="container-buttons">
-                                <Button
-                                    className="p-3"
-                                    onClick={() => console.log("click button1")}
-                                >Get in touch</Button>
-                                <Button className="p-3">Get in touch</Button>
+                                <a href="#content-services"
+                                    className="p-3 a-button"
+                                >Get in touch</a>
+                                <Button className="p-3 a-button">Get in touch</Button>
                             </div>
                             <div className="btn-start-create">
                                 <a href="#dynamic-form">Start to create</a>
@@ -30,5 +34,5 @@ export default function Introduction() {
             </Container>
         </div>
     );
-    
+
 }
