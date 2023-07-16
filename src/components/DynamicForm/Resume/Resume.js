@@ -1,20 +1,21 @@
 import { Button, CardGroup, Modal } from "react-bootstrap";
 import CardResume from "./CardResume/CardResume";
 import CardResumeHobbies from "./CardResume/CardResumeHobbies";
-export default function Resume({showModal, setModal, setStep}) {
-    const favouriteFruit=localStorage.getItem('fruitName');
-    const fruitIcon= localStorage.getItem('iconFruit');
-    const hobbiesStorage=JSON.parse(localStorage.getItem('hobbies'));
+export default function Resume({ showModal, setModal, setStep }) {
+    const favouriteFruit = localStorage.getItem('fruitName');
+    const fruitIcon = localStorage.getItem('iconFruit');
+    const hobbiesStorage = JSON.parse(localStorage.getItem('hobbies'));
     const addiotionalHobbie = localStorage.getItem('additionalHobbie');
     const comment = localStorage.getItem('comment');
-
-    const clearForm = () =>{
+    const heartsStorage = JSON.parse(localStorage.getItem('heart'));
+    console.log("heartsStorage: ", heartsStorage)
+    const clearForm = () => {
         localStorage.clear();
         setModal(false);
         setStep(1);
     };
 
-    return(
+    return (
         <Modal
             show={showModal}
             size="lg"
@@ -28,15 +29,15 @@ export default function Resume({showModal, setModal, setStep}) {
             <Modal.Body>
                 <h4>Here you are your resume</h4>
                 <CardGroup className="mt-4">
-                    {favouriteFruit && fruitIcon &&(
-                        <CardResume 
+                    {favouriteFruit && fruitIcon && (
+                        <CardResume
                             title={fruitIcon}
                             subtitle="Your favourite fruit is"
                             text={favouriteFruit}
                         />
                     )}
-                    {hobbiesStorage &&(
-                        <CardResumeHobbies 
+                    {hobbiesStorage && (
+                        <CardResumeHobbies
                             subtitle="Your hobbies"
                             text={addiotionalHobbie}
                             hobbiesStorage={hobbiesStorage}
@@ -47,6 +48,12 @@ export default function Resume({showModal, setModal, setStep}) {
                             subtitle="And for the last this is the comment"
                             text={comment}
                         />
+                    )}
+                    {heartsStorage && (
+                         <CardResumeHobbies
+                         subtitle="Your Hearts"
+                         hobbiesStorage={heartsStorage}
+                     />
                     )}
                 </CardGroup>
             </Modal.Body>

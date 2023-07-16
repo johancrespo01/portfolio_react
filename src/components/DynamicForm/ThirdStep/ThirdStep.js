@@ -36,11 +36,11 @@ export default function ThirdStep({setStep}) {
                         </FloatingLabel>
                     </Col>
                 </Row>
-                <div className="send-form">
+                {/* <div className="send-form">
                     <p className="result p-3" onClick={()=> setModal(true)}>
                         View result 🙌
                     </p>
-                </div>
+                </div> */}
                 {modal && (
                     <Resume showModal={modal} setModal={setModal} setStep={setStep}/>
                 )}
