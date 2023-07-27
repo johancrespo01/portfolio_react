@@ -13,9 +13,9 @@ import {
 import Resume from "../Resume";
 
 const options = [
-    { id: 1, value: "heart_red", label: "Corazon rojo ❤️" },
-    { id: 2, value: "heart_black", label: "Corazon negro 🖤" },
-    { id: 3, value: "heart_green", label: "Corazon verde 💚" },
+    { id: 1, value: "feliz", label: "Feliz ❤️" },
+    { id: 2, value: "triste", label: "Triste 🖤" },
+    { id: 3, value: "nose", label: "No se 💚" },
 ];
 
 export default function FourStep({ setStep }) {
@@ -27,11 +27,11 @@ export default function FourStep({ setStep }) {
     return (
         <div>
             <h2>Four Step</h2>
-            <h4>Do you want to cut a heart?</h4>
+            <h4>How do you feel today?</h4>
             <Container className="p-5 text-center">
                 <Row className="justify-content-md-center">
                     <Col lg="7">
-                        <h5>Select your favorite hearts</h5>
+                        <h5>Moods</h5>
                         <Select
                             defaultValue={selectOption}
                             onChange={setSelectOption}

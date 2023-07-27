@@ -17,7 +17,7 @@ export default function DynamicForm() {
 
     return(
         <div className="dynamic-form mt-4 mb-5" id="dynamic-form">
-            <Container className="text-center p-4">
+            {/* <Container className="text-center p-4">
                 <div className="content-dynamic-form mt-5 p-4">
                     <h1 className="title-dynamic-form">
                         Fill the form
@@ -41,7 +41,7 @@ export default function DynamicForm() {
                         </div>
                     </div>
                 </div>
-            </Container>
+            </Container> */}
 
         </div>
     );

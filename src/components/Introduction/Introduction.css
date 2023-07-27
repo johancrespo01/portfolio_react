@@ -52,7 +52,12 @@
     border-radius: 12px;
     cursor: pointer;
 }
-
+.img_profile{
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    margin-top: 40px;
+}
 .introduction .container-actions .container-buttons .a-button:last-child{
     position: absolute;
     left: 0;

@@ -1,43 +1,43 @@
 import { Container, Row, Col } from "react-bootstrap";
 import "./Services.css";
-import imgCourse1 from "../../assets/img/service-1.png";
-import imgCourse2 from "../../assets/img/service-2.png";
-import imgCourse3 from "../../assets/img/guitarra.webp";
+import imgCourse1 from "../../assets/img/pwc.png";
+import imgCourse2 from "../../assets/img/taskReact.png";
+import imgCourse3 from "../../assets/img/prime.jpeg";
 import CardService from "./CardService/CardService";
 
 export default function Services() {
     const servicesArray = [
         {
-            title: "Autolavado",
-            subtitle: "Vive la mejor experiencia lavando tu vehículo",
+            title: "Pay With Crypto",
+            subtitle: "...",
             image: imgCourse1,
-            footer: "Go to the service ➡️",
-            link: "https://pulitocarwash.co/",
+            footer: "Visitar",
+            link: "https://paywithcryptoapp.com/",
         },
         {
-            title: "Servicio de telefonia",
-            subtitle: "¡Contrata tu Plan de Internet Hogar o lleva tu Celular con un plan Pospago!",
+            title: "Task React",
+            subtitle: "...",
             image: imgCourse2,
-            footer: "Go to the service ➡️",
-            link: "https://www.movistar.com.co/",
+            footer: "Visitar",
+            link: "https://github.com/johancrespo01/react_Task_1",
         },
         {
-            title: "Curso de guitarra",
-            subtitle: "En este curso de guitarra aprenderás a utilizar este instrumento musical",
+            title: "Servicio 3",
+            subtitle: "...",
             image: imgCourse3,
-            footer: "Go to the course ➡️",
-            link: "https://edutin.com/curso-de-guitarra-3884",
+            footer: "Go",
+            link: "",
         },
     ];
 
     return (
-        <div className="services p-4 mt-5" id="content-services">
+        <div className="services p-4 mt-5" id="services">
             <Container fluid>
                 <Row className="justify-content-md-center">
                     <Col xs={12} md={8}>
-                        <h2 className="text-center">Services</h2>
+                        <h2 className="text-center">Desarrollos</h2>
                         <h4 className="pb-3 text-center">
-                            Check some of my services that i did
+                            Mira algunos de mis trabajos
                         </h4>
                         <Row xs={1} md={3} className="g-4 mt-4">
                             {servicesArray.map((service, index) => (
